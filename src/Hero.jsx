@@ -5,16 +5,18 @@ function Hero() {
         <>
             <section className="heroPage">
 
-                <div className="heroHeader">
+
+                <div className="heroHeader">  {/* Container of the Navigation bar */}
                     <div className='logo'>D<span>Z</span></div>
                     <div className="links">
                         <a href="#aboutus">ABOUT</a>
                         <a href="#dronesArtcles">ARTICLES</a>
                     </div>
+
                     <div><button type='button' onClick={jumpToSubscribe} >SUBSCRIBE</button></div>
                 </div>
 
-                <div className="heroTittle">
+                <div className="heroTittle">   {/* Container of the tittles*/}
 
                     DRONOTICZ
                     <p>THE ERA OF DRONES</p>

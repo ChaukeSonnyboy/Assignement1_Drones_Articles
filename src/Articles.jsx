@@ -1,7 +1,7 @@
-import drone1 from './images/surveillance.png'
-import drone2 from './images/robotics.png'
-import drone3 from './images/prosthetics.png'
-import drone4 from './images/agriculture.png'
+import drone1 from './assets/images/surveillance.png'
+import drone2 from './assets/images/robotics.png'
+import drone3 from './assets/images/prosthetics.png'
+import drone4 from './assets/images/agriculture.png'
 
 function Articles() {
     return (
@@ -9,18 +9,19 @@ function Articles() {
 
             <section className="articles" id='dronesArtcles'>
 
-                <div className="artContainer">
+                <div className="artContainer"> {/* Container of the article header and articles containers */}
 
-                    <div id="artHeader">
+                    <div id="artHeader"> {/* Container of the articles Header */}
                         <p>LATEST ARTICLES</p>
                         <hr />
                     </div>
-                    <div className="latestArticles">
 
-                        <div className="droneArt">
-                            <img src={drone1} alt="drone1" />
+                    <div className="latestArticles"> {/* Container of the articles */}
+
+                        <div className="droneArt"> {/* Article Card */}
+                            <img src={drone1} alt="drone1" />   {/* Article Image */}
                             <hr />
-                            <div className="desc">How to automate surveillance drones</div>
+                            <div className="desc">How to automate surveillance drones</div> {/* Article Description/Topic */}
                         </div>
 
                         <div className="droneArt">

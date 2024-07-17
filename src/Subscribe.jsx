@@ -3,9 +3,9 @@ function Subscribe() {
   return (
     <>
 
-      <div id='subscribe' className="subscriber" >
+      <div id='subscribe' className="subscriber" > {/* User Subscribe Main Container  */}
 
-        <form action="">
+        <form action=""> {/* Form to submit user info  */}
 
           <div className='userSubscriber'>
             <div id="ftrHeading" >

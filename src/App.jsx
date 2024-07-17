@@ -3,9 +3,9 @@ import Hero from './Hero'
 import Articles from './Articles'
 import About from './About'
 import Subscribe from './Subscribe'
-import facebookLogo from './images/facebook.png'
-import linkedinLogo from './images/linkedin.png'
-import pinterestLogo from './images/Pinterest.jpg'
+import facebookLogo from './assets/images/facebook.png'
+import linkedinLogo from './assets/images/linkedin.png'
+import pinterestLogo from './assets/images/Pinterest.jpg'
 import { jumpToSubscribe } from './SubscribeRef'
 
 
@@ -20,7 +20,7 @@ function App() {
 
       <footer>
 
-        <div className='socialMedia'>
+        <div className='socialMedia'> {/* Social Media Links Container  */}
           <a href="https://www.facebook.com/" target="_blank">
             <img src={facebookLogo} alt="Facebook" />
           </a>
@@ -32,7 +32,7 @@ function App() {
           </a>
         </div>
 
-        <div className='bookmark'>
+        <div className='bookmark'> {/* Bookmark Links Container  */}
 
           <a href="#aboutus">ABOUT</a>
           <a href="#dronesArtcles">ARTICLES</a>
