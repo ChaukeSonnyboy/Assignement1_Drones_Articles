@@ -1,26 +1,28 @@
-import './App.css'
-import Hero from './Hero'
-import Articles from './Articles'
-import About from './About'
-import Subscribe from './Subscribe'
-import facebookLogo from './assets/images/facebook.png'
-import linkedinLogo from './assets/images/linkedin.png'
-import pinterestLogo from './assets/images/Pinterest.jpg'
-import { jumpToSubscribe } from './SubscribeRef'
-
-
+import "./App.css";
+import Subscribe from "./components/subscribe/Subscribe";
+import Articles from "./components/articles/Articles";
+import Footer from "./components/navigation/Footer";
+import About from "./components/about/About";
 
 function App() {
-  return (
-    <>
-      <Hero />
+	return (
+		<>
+			{/* <Header /> */}
       <Articles />
-      <About />
+      <About/>
       <Subscribe />
+      <Footer/>
+			{/* <Subscribe /> */}
+			{/* <Articles/> */}
+
+			{/* <Footer/> */}
+			{/* <Hero />
+      
+      <About />
 
       <footer>
 
-        <div className='socialMedia'> {/* Social Media Links Container  */}
+        <div className='socialMedia'> {/* Social Media Links Container  *
           <a href="https://www.facebook.com/" target="_blank">
             <img src={facebookLogo} alt="Facebook" />
           </a>
@@ -32,7 +34,7 @@ function App() {
           </a>
         </div>
 
-        <div className='bookmark'> {/* Bookmark Links Container  */}
+        <div className='bookmark'> {/* Bookmark Links Container  }
 
           <a href="#aboutus">ABOUT</a>
           <a href="#dronesArtcles">ARTICLES</a>
@@ -40,9 +42,9 @@ function App() {
         </div>
 
 
-      </footer>
-    </>
-  )
+      </footer> */}
+		</>
+	);
 }
 
 export default App;
