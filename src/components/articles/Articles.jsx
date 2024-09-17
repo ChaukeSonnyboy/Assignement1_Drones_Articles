@@ -8,7 +8,7 @@ const Articles = () => {
 				<div className={Styles.container}>
 					<div className={Styles.title}>
 						<h2>LATEST ARTICLES</h2>
-						<hr />
+						<hr className="titleLine"/>
 					</div>
 					<ArticleCard />
 				</div>

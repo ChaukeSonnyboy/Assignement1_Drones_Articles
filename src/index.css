@@ -85,13 +85,20 @@ button:hover {
 }
 
 hr {
-	height: 4px;
+	height: 3px;
 	background-color: var(--primary-color);
-	width: 64px;
+	width: 65px;
 	padding: 0;
 	border: none;
+	margin: auto;
 }
 
 ul {
 	list-style-type: none;
+}
+
+.titleLine
+{
+	margin-top: 25px;
+	width: 80px;
 }
