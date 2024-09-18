@@ -6,6 +6,7 @@ import Styles from "./Navigation.module.css";
 const Socials = () => {
 	return (
 		<>
+			{/* Contact/social sites to be placed on the footer */}
 			<div className={Styles.socialsContainer}>
 				<nav>
 					<ul className={Styles.socialsLinks}>

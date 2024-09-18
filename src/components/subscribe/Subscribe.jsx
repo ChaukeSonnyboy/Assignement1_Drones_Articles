@@ -3,7 +3,7 @@ import Styles from "./Subscribe.module.css";
 const Subscribe = () => {
 	return (
 		<>
-			<section className={Styles.subscribeSection}>
+			<section className={Styles.subscribeSection} id="subscribe">
 				<div className={Styles.formContainer}>
 					<form action="">
 						<div>

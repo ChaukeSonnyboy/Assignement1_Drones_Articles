@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className={Styles.footer}>
 			<Socials />
-			<Navbar />
+			<Navbar  />
 		</div>
 	);
 };

@@ -2,18 +2,19 @@ import Styles from "./Navigation.module.css";
 
 const Navbar = () => {
 	return (
+		// Footer navigation menu
 		<div className={Styles.navbarContainer}>
-			<nav className={Styles.navContainer}>
+			<nav>
 				<ul className={Styles.navLinks}>
 					<li>
-						<a href="">ABOUT</a>
+						<a href="#aboutus">ABOUT</a>
 					</li>
 
 					<li>
-						<a href="">ARTICLE</a>
+						<a href="#articles">ARTICLE</a>
 					</li>
 					<li>
-						<a className="btn" href="">
+						<a className="btn" href="#subscribe">
 							<button>SUBSCRIBE</button>
 						</a>
 					</li>

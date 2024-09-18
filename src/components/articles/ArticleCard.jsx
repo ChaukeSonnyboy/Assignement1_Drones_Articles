@@ -1,32 +1,37 @@
 import Styles from "./Articles.module.css";
+import surveillanceImage from "../../assets/images/surveillance.png";
+import roboticsImage from "../../assets/images/robotics.png";
+import prostheticsImage from "../../assets/images/prosthetics.png";
+import agricultureImage from "../../assets/images/agriculture.png";
 
 const ArticleCard = () => {
 	const drones = [
 		{
 			id: 1,
-			source: "src/assets/images/surveillance.png",
+			source: surveillanceImage,
 			description: "How to automate surveillance drones",
 			altext: "Surveillance drone image",
 		},
 		{
 			id: 2,
-			source: "src/assets/images/robotics.png",
+			source: roboticsImage,
 			description: "Robotics and Artificial Intelligence",
 			altext: "Robotics drone image",
 		},
 		{
 			id: 3,
-			source: "src/assets/images/prosthetics.png",
+			source: prostheticsImage,
 			description: "Improving Lives through Robotics Prosthetics",
 			altext: "Prosthetics drone image",
 		},
 		{
 			id: 4,
-			source: "/src/assets/images/agriculture.png",
+			source: agricultureImage,
 			description: "Power of Robotics in Agriculture",
 			altext: "Agriculture drone image",
 		},
 	];
+
 	return (
 		<>
 			<ul className={Styles.list}>

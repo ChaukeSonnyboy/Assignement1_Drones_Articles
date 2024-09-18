@@ -1,42 +1,3 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-
-}
-
-.socialMedia img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  opacity: 0.2;
-}
-
-.socialMedia img:hover {
-  opacity: 0.8;
-}
-
-#lnkdIn {
-  border-radius: 25%;
-}
-
-.bookmark button {
-  margin-left: 50px;
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
@@ -50,6 +11,8 @@ footer {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	font-weight: normal;
+	scroll-behavior: smooth;
 }
 
 p {
@@ -62,13 +25,14 @@ a {
 	color: black;
 }
 
+
 h1 {
 	font-size: 112px;
 }
 
 h2 {
 	font-size: 32px;
-	font-weight: normal;
+	/* font-weight: normal; */
 }
 
 button {
@@ -97,8 +61,7 @@ ul {
 	list-style-type: none;
 }
 
-.titleLine
-{
+.titleLine {
 	margin-top: 25px;
 	width: 80px;
 }
