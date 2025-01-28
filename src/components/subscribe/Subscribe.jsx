@@ -5,15 +5,17 @@ const Subscribe = () => {
 		<>
 			<section className={Styles.subscribeSection} id="subscribe">
 				<div className={Styles.formContainer}>
+					<h2>SUBSCRIBE</h2>
+					<p>Sign-up to our newsletter</p>
+
 					<form action="">
-						<div>
-							<h2>SUBSCRIBE</h2>
-							<p>Sign-up to our newsletter</p>
-							<input type="text" placeholder="Your email" /> <br />
-							<button type="button" className="button">
-								SUBMIT
-							</button>
-						</div>
+						<input type="text" placeholder="Your email" /> <br />
+						<button
+							type="button"
+							className={`${Styles.btn} ${Styles.secondaryBtn}`}
+						>
+							SUBMIT
+						</button>
 					</form>
 				</div>
 			</section>

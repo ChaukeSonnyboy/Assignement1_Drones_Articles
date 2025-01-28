@@ -14,9 +14,7 @@ const Navbar = () => {
 						<a href="#articles">ARTICLE</a>
 					</li>
 					<li>
-						<a className="btn" href="#subscribe">
-							<button>SUBSCRIBE</button>
-						</a>
+						<a className={`${Styles.btn} ${Styles.primaryBtn}`}>SUBSCRIBE</a>
 					</li>
 				</ul>
 			</nav>

@@ -1,70 +1,58 @@
 .aboutSection {
-	width: 100%;
-}
-
-.aboutContainer {
-	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	width: 100%;
 }
 
-.aboutContainer div {
-	flex: 1;
+.aboutSection > article {
+	width: 50%;
 }
 
-.abtImage {
-	height: 100vh;
-}
-
-.abtImage img {
+/* the image will be replaced with a swiper */
+.swiperContainer img {
 	width: 100%;
 	height: 100%;
-	object-fit: fill;
+	object-fit: cover;
+	object-position: center;
 }
-.contentContainer {
+
+.aboutContent {
 	align-content: center;
 }
 
-.title {
-	text-align: center;
-}
-
-.aboutDrones {
-	width: 75%;
+.aboutContent p {
+	width: 80%;
 	margin: auto;
+	padding: 15px;
 	margin-top: 10%;
+	line-break: balance;
 }
 
 @media only screen and (max-width: 768px) {
-	.contentContainer {
-		padding: 25px 0px;
-	}
-
-	.aboutContainer {
+	.aboutSection {
+		display: flex;
 		flex-direction: column;
-		align-items: center;
+		gap: 50px;
+		padding-bottom: 20px;
 	}
 
-	.abtImage,
-	.contentContainer {
+	.aboutSection > article {
 		width: 100%;
+		margin: auto;
 	}
 
-	.aboutDrones {
+	.aboutContent p {
+		margin-top: 8%;
 		width: 100%;
-		padding: 0px 20px;
+		padding: 20px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	.contentContainer {
-		padding: 25px 0px;
-	}
-	.title h2 {
+	.aboutContent h2 {
 		font-size: 1.5rem;
 	}
 
-	.aboutDrones p {
+	.aboutContent p {
 		font-size: 0.9rem;
 		padding: 0px 10px;
 	}
