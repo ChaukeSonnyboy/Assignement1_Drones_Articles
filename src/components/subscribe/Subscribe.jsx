@@ -10,10 +10,7 @@ const Subscribe = () => {
 
 					<form action="">
 						<input type="text" placeholder="Your email" /> <br />
-						<button
-							type="button"
-							className={`${Styles.btn} ${Styles.secondaryBtn}`}
-						>
+						<button type="button" className={`${Styles.btn}`}>
 							SUBMIT
 						</button>
 					</form>

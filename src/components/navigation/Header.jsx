@@ -1,10 +1,23 @@
 import Styles from "./Navigation.module.css";
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import { useState, useEffect } from "react";
 
-import { useState } from "react";
 const Header = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 0);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
@@ -39,19 +52,16 @@ const Header = () => {
 	return (
 		<>
 			{/* Default menu to be shown on the header in desktop/laptops */}
-			<header className={Styles.mainHeader}>
+			<header
+				className={`${Styles.mainHeader} ${isScrolled ? Styles.scrolled : ""}`}
+			>
 				<div>
-					<a href="#">
-						{" "}
-						<h2>
-							D<span className={Styles.logo}>Z</span>
-						</h2>
-					</a>
+					<a href="#">DRONOTICZ</a>
 				</div>
 
-				<div className={Styles.headerNavbarContainer}>
+				<div className={Styles.navbarContainer}>
 					<nav>
-						<ul className={Styles.headerNavLinks}>
+						<ul className={Styles.navLinks}>
 							<li>
 								<a href="#aboutus">ABOUT</a>
 							</li>
@@ -64,9 +74,7 @@ const Header = () => {
 				</div>
 
 				<div className={Styles.headerButton}>
-					<a className="btn" href="#subscribe">
-						<button>SUBSCRIBE</button>
-					</a>
+					<button className={Styles.btn}>SUBSCRIBE</button>
 				</div>
 
 				{/* Header in smaller devices, it will only be visible in smaller devices*/}

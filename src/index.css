@@ -49,32 +49,6 @@ li {
 	list-style-type: none;
 }
 
-.btn {
-	border: 1px solid var(--primary-color);
-	background-color: transparent;
-	width: 200px;
-
-	padding: 10px 0px;
-	text-align: center;
-
-	transition: all;
-	transition-duration: 0.5s;
-	transition-timing-function: ease-in-out;
-}
-
-.primary-btn {
-	border-width: 2px;
-}
-
-.secondaryBtn {
-	width: 165px;
-}
-
-.btn:hover {
-	border-color: var(--secondary-color);
-	background-color: var(--secondary-color);
-}
-
 hr {
 	width: 80px;
 	height: 3px;

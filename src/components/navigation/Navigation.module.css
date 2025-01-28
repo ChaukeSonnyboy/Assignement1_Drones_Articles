@@ -2,36 +2,38 @@
 .mainHeader {
 	display: flex;
 	align-items: center;
-	border: 1px solid red;
-
+	height: 80px;
+	padding: 0px 50px;
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	background-color: transparent;
 	transition: background-color 0.3s ease;
-	padding: 15px 50px;
 }
 
 .mainHeader div {
 	flex: 1;
 }
 
-.logo {
-	color: var(--backdrop-color);
+.scrolled {
+	background-color: var(--backdrop-color);
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.headerNavbarContainer {
+.navLinks {
 	display: flex;
 	justify-content: center;
-}
-
-.headerNavLinks {
-	display: flex;
 	gap: 50px;
 }
 
-/* Main Navbar styles*/
+.navLinks a:hover {
+	text-decoration: underline;
+}
+
+.headerButton {
+	text-align: end;
+}
 
 .btn {
 	border: 1px solid var(--primary-color);
@@ -40,23 +42,20 @@
 
 	padding: 10px 0px;
 	text-align: center;
+	border-width: 2px;
 
 	transition: all;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in-out;
+	font-size: 24px;
 }
 
-.primaryBtn {
-	border-width: 2px;
+.btn:hover {
+	border-color: var(--secondary-color);
+	background-color: var(--secondary-color);
 }
 
-/* Footer styles*/
-.footer {
-	background-color: white;
-	height: 80px;
-	text-align: center;
-	align-content: center;
-}
+/* Main Navbar styles*/
 
 /* Collapsed Menu Styles */
 
@@ -68,7 +67,7 @@
 	right: 0;
 	width: 50%;
 	padding: 10px 0px 25px 0px;
-	background-color: azure;
+	background-color: var(--backdrop-color);
 }
 
 .openMenu {
@@ -98,19 +97,25 @@
 	display: none;
 }
 
+/* Footer styles*/
+.footer {
+	background-color: white;
+	height: 80px;
+	text-align: center;
+	align-content: center;
+}
+
 @media only screen and (max-width: 768px) {
-	.headerNavbarContainer,
+	.mainHeader {
+		padding: 0px 10px;
+	}
+	.navbarContainer,
 	.headerButton {
 		display: none;
 	}
 	.collapsedNav {
 		display: flex;
-	}
-
-	.navbarContainer {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 15px;
+		justify-content: end;
+		padding-right: 10px;
 	}
 }
