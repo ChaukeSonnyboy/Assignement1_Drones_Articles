@@ -43,10 +43,8 @@ const Header = () => {
 							</a>
 						</li>
 						<li>
-							<a href="#subscribe">
-								<button className={Styles.btn} onClick={toggleMenu}>
-									SUBSCRIBE
-								</button>
+							<a href="#subscribe" onClick={toggleMenu}>
+								SUBSCRIBE
 							</a>
 						</li>
 					</ul>
@@ -62,7 +60,9 @@ const Header = () => {
 				className={`${Styles.mainHeader} ${isScrolled ? Styles.scrolled : ""}`}
 			>
 				<div>
-					<a href="#">DRONOTICZ</a>
+					<a href="#" onClick={() =>setIsOpen(false)}>
+						DRONOTICZ
+					</a>
 				</div>
 
 				<div className={Styles.navbarContainer}>

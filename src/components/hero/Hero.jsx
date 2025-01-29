@@ -6,7 +6,7 @@ const Hero = () => {
 			<div>
 				<h1>DRONOTICZ</h1>
 				<h2>the era of drones</h2>
-				<hr />
+				<hr className={Styles.heroContainer} />
 			</div>
 		</section>
 	);
