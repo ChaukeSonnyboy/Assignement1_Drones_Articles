@@ -30,10 +30,9 @@
 @media only screen and (max-width: 768px) {
 	.aboutSection {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		gap: 50px;
-		padding-bottom: 20px;
-		padding-top: 79px;
+		padding-top: 81px;
 	}
 
 	.aboutSection > article {
