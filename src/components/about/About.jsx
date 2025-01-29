@@ -18,7 +18,7 @@ const About = () => {
 						</div>
 
 						<p>
-							Welcome to our dronoticz, where innovation and technology converge
+							Welcome to our dronoticz where innovation and technology converge
 							to shape the future. We revolutionize industries and improve lives
 							worldwide through our passion for pushing the boundaries of what
 							robots can do. With expertise in AI, computer vision, mechanical
