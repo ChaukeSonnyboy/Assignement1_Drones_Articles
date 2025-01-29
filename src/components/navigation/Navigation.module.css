@@ -32,8 +32,8 @@
 	text-decoration: underline;
 }
 
-.logo a:hover {
-	cursor: default;
+.logo a {
+	-webkit-tap-highlight-color: transparent;
 }
 
 .headerButton {
