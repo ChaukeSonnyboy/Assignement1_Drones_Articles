@@ -31,6 +31,10 @@
 	text-decoration: underline;
 }
 
+.logo a:hover {
+	cursor: default;
+}
+
 .headerButton {
 	text-align: end;
 }
