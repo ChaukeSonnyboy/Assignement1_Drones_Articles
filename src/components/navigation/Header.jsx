@@ -32,15 +32,21 @@ const Header = () => {
 				<nav>
 					<ul className={Styles.collapsedNavLinks}>
 						<li>
-							<a href="#aboutus">ABOUT</a>
+							<a href="#aboutus " onClick={toggleMenu}>
+								ABOUT
+							</a>
 						</li>
 
 						<li>
-							<a href="#articles">ARTICLE</a>
+							<a href="#articles" onClick={toggleMenu}>
+								ARTICLE
+							</a>
 						</li>
 						<li>
-							<a className="btn" href="#subscribe">
-								<button>SUBSCRIBE</button>
+							<a href="#subscribe">
+								<button className={Styles.btn} onClick={toggleMenu}>
+									SUBSCRIBE
+								</button>
 							</a>
 						</li>
 					</ul>
@@ -74,7 +80,9 @@ const Header = () => {
 				</div>
 
 				<div className={Styles.headerButton}>
-					<button className={Styles.btn}>SUBSCRIBE</button>
+					<a href="#subscribe">
+						<button className={Styles.btn}>SUBSCRIBE</button>
+					</a>
 				</div>
 
 				{/* Header in smaller devices, it will only be visible in smaller devices*/}
