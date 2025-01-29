@@ -60,7 +60,7 @@ const Header = () => {
 				className={`${Styles.mainHeader} ${isScrolled ? Styles.scrolled : ""}`}
 			>
 				<div>
-					<a href="#" onClick={() =>setIsOpen(false)}>
+					<a href="#" onClick={() => setIsOpen(false)}>
 						DRONOTICZ
 					</a>
 				</div>

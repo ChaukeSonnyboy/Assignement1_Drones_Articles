@@ -22,10 +22,11 @@
 				rgba(27, 105, 121, 0.329),
 				rgba(80, 80, 177, 0.219)
 			),
-			url("https://images.unsplash.com/photo-1528429313106-e55e29042457?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-		background-size: stretch;
-		background-position: center;
-		align-content: baseline;
+			url("https://images.pexels.com/photos/810493/pexels-photo-810493.jpeg?auto=compress&cs=tinysrgb&w=600");
+		background-size: center;
+		background-position: top;
+		
+		
 	}
 	.hero h1 {
 		font-size: 80px;
@@ -39,6 +40,7 @@
 		margin: auto;
 		margin-top: 10%;
 		width: fit-content;
+		background-color: rgba(166, 184, 184, 0.486);
 	}
 }
 
@@ -48,10 +50,9 @@
 				rgba(27, 105, 121, 0.329),
 				rgba(80, 80, 177, 0.219)
 			),
-			url("https://images.unsplash.com/photo-1528429313106-e55e29042457?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+			url("https://images.pexels.com/photos/810493/pexels-photo-810493.jpeg?auto=compress&cs=tinysrgb&w=600");
 		background-size: stretch;
 		background-position: top;
-		align-content: baseline;
 	}
 
 	.hero h1 {
@@ -60,11 +61,5 @@
 
 	.hero h2 {
 		font-size: 24px;
-	}
-
-	.hero div {
-		margin: auto;
-		margin-top: 30%;
-		width: fit-content;
 	}
 }
